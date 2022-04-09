@@ -1,0 +1,304 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&family=Roboto&display=swap');
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Mono', monospace;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif, 'Red Hat Mono', monospace;
+    background-repeat: no-repeat;
+    max-width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+  width: 100%;
+  height: 70px;
+  padding: 5px;
+  background-color:rgb(55, 189, 144);
+  display:flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+    
+}
+
+.menu{
+    list-style:none;
+    display:flex ;
+    font-size: 20px;
+}
+.menu li a{
+color:rgb(156, 31, 31);
+display:block;
+text-decoration: none;
+margin-left: 10px;
+padding:10px 20px 10px 20px;
+border-radius: 10px;
+}
+
+.menu li a:hover{
+    color: rgb(165, 42, 165);
+    display: block;
+    text-decoration: none;
+    margin-left: 10px;
+    padding: 10px 20px 10px 20px;
+    
+
+
+}
+.logo{
+    width:65px;
+    height:65px;
+    border-radius: 8px;
+}
+
+.titulo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    justify-content: flex-start;
+}
+.main-box{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    
+}
+.box-baner{
+    display: flex;
+}
+/* .div-baner{
+    
+} */
+.baner{
+    width: 100%;
+    display: block;    
+}
+
+.subtitulo{
+    display:flex;
+    
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    
+}
+
+
+.box-cards{
+    display: flex;
+    flex-direction: row;
+    
+
+}
+
+
+.box-cards div img {
+    width: 400px;
+    height: 600px;
+    margin:20px;
+    border-radius: 10px;
+
+
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video iframe{
+
+    width: 800px;
+    height:600px;
+    display: inline-block;
+    margin-top: 50px;
+}
+.rodape{
+    background-color: aquamarine;
+    width: 100%;
+    height: 70px;
+    
+
+
+
+}
+.conteudo-rodape{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin:10px
+
+}
+.conteudo-rodape ul li{
+    display:inline-block;
+    margin:0 auto;
+}
+.conteudo-rodape ul li a img{
+    width: 50px;
+    height: 50px;
+}
+ 
+@media ( max-width:426px){
+
+    * {
+
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: 'Red Hat Mono', monospace;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+   
+ body{
+       width: 100vw;
+       height: 100vh;
+       display: flex;
+       flex-direction: column; 
+       
+    }
+    header {
+        width: 100vw;
+        height: 300px;
+        padding: 5px;
+        background-color:rgb(82, 179, 146);
+        display:flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+                
+        
+    }
+    .menu{
+        list-style:none;
+        display:flex;
+        flex-direction: column;
+        font-size: 20px;
+       
+    }
+    .menu li a{
+    color:black;
+    display:block;
+    text-decoration: none;
+    margin: 5px;
+    padding:10px 20px 10px 20px;
+    border-radius: 10px;
+   
+    }
+    
+
+    .menu li a:hover{
+        color: rgb(165, 42, 165);
+        display: block;
+        text-decoration: none;
+        margin: 5px;
+        padding: 5px 10px 5px 10px;
+      
+        
+        
+    }
+    .logo{
+        width: 80px;
+        height: 80px;
+        margin: 10px;
+        border-radius: 8px;
+      
+    }
+
+    
+    .titulo{
+        font-family: 'Roboto', sans-serif;
+        font-size: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      
+    }
+    .main-box{
+        max-width: 100vw;
+        display: flex;
+        flex-direction: column;
+     
+        
+    }
+
+    .baner{
+        width: 100%;
+        display: block; 
+       
+    }
+
+    .subtitulo{
+        max-width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5rem;
+        flex-direction: column;
+    }
+    .box-cards{
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;     
+        
+    }
+    
+    
+    .box-cards div img {
+        width: 100vw;
+        height: 500px;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+    
+    .card1, .card2, .card3{
+        width: 426px;
+    }
+
+    .video{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .video iframe{
+
+        width: 426px;
+        height:600px;
+        display: inline-block;
+        margin-top: 50px;
+    }
+    .rodape{
+        background-color:rgb(82, 179, 146);
+        width: 426px;
+        height: 70px;
+        
+
+
+
+    }
+    .conteudo-rodape{
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        margin:10px
+
+    }
+    .conteudo-rodape ul li{
+        display:inline-block;
+        margin:0 auto;
+    }
+    .conteudo-rodape ul li a img{
+        width: 50px;
+        height: 50px;
+    }
+}
